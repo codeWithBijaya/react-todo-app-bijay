@@ -1,4 +1,4 @@
-// import { set } from 'date-fns/esm';
+
 import React, { useState, useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -64,7 +64,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
         toast.success('Task Added Sucessfully!');
       }
       if (type === 'update') {
-        // console.log('updating Task!');
+       
         if (todo.title !== title || todo.status !== status) {
           dispatch(
             updateTodo({
@@ -80,7 +80,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
       }
       setModalOpen(false);
     }
-    // console.log(title, status);
+    
   };
   return (
     <AnimatePresence>
