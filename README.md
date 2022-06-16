@@ -4,12 +4,11 @@ A customisable todo app.
 
 ## Demo
 
-- Demo hosted on Netlify:
+- Demo hosted on Netlify: https://codewithbijay.netlify.app/
 
 ## Features
 
 - Tasks saved locally
-- Customisable task color
 - Edit task
 - Notification Box
 - Tablet & mobile friendly
