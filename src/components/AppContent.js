@@ -27,10 +27,8 @@ function AppContent() {
   const todoList = useSelector((state) => state.todo.todoList);
   const filterStatus = useSelector((state) => state.todo.filterStatus);
 
-  //   console.log(todoList);
-  // copy of todolist
   const sortedTodoList = [...todoList];
-  // sorting on basis of time
+ 
   sortedTodoList.sort((a, b) => new Date(b.time) - new Date(a.time));
   const filteredTodoList = sortedTodoList.filter((item) => {
     if (filterStatus === 'all') {
