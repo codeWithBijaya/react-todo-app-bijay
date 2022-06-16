@@ -8,16 +8,16 @@ import { updateFilterStatus } from '../slices/todoSlice';
 function AppHeader() {
   const [modalOpen, setModalOpen] = useState(false);
   const filterStatus = useSelector((state) => state.todo.filterStatus);
-  //   const [filterStatus, setFilterStatus] = useState(initialFilterStatus);
+ 
   const dispatch = useDispatch();
 
   const updateFilter = (e) => {
-    // setFilterStatus(e.target.value);
+  
     dispatch(updateFilterStatus(e.target.value));
   };
   return (
     <div className={styles.appHeader}>
-      {/* <h1>Hello from Header</h1> */}
+    
       <Button variant="primary" onClick={() => setModalOpen(true)}>
         {' '}
         Add Task
