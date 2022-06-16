@@ -1,4 +1,4 @@
-// import { format } from 'date-fns/format';
+
 import React, { useState, useEffect } from 'react';
 import { MdDelete, MdEdit } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
@@ -33,10 +33,10 @@ function TodoItem({ todo }) {
   const handleDelete = () => {
     dispatch(deleteTodo(todo.id));
     toast.success('TodoItem Deleted sucessfully!');
-    // console.log('deleting');
+   
   };
   const handleUpdate = () => {
-    // console.log('update');
+ 
     setUpdateModalOpen(true);
   };
 
